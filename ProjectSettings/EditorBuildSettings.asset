@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inicio.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/ImageTarget.unity
+    guid: 83686ac4c902a974e818b8ce659423e6
+  - enabled: 1
+    path: Assets/Scenes/GroundPlane.unity
+    guid: 974bcd394b323d749a6f974879ed095a
+  - enabled: 1
+    path: Assets/Scenes/CambioModelos.unity
+    guid: 9d986baf27f8a9a4ca8e23baf0cf72dd
+  - enabled: 1
+    path: Assets/Scenes/ImageRouter.unity
+    guid: 38e02fde722d7ff48b31505c0c215a15
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7ec001d737fe9404f93d0ce657d993a2, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
