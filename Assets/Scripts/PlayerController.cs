@@ -8,28 +8,41 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed = 10f;          // Velocidad para girar el personaje
 
     private Vector2 joystickInput = Vector2.zero;
+    private Rigidbody rb;
 
-    void Update()
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    void FixedUpdate()
     {
         Vector3 move = new Vector3(joystickInput.x, 0f, joystickInput.y);
 
-        // Mover personaje
-        transform.Translate(move * speed * Time.deltaTime, Space.World);
+        // Movimiento con Rigidbody
+        rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
 
-        // Girar personaje hacia la dirección de movimiento
+        // Rotación del personaje
         if (move.magnitude > 0.1f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(move);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+            rb.MoveRotation(
+                Quaternion.Slerp(
+                    rb.rotation,
+                    targetRotation,
+                    Time.fixedDeltaTime * rotationSpeed
+                )
+            );
         }
 
+        // Animación
         if (animator != null)
         {
             float speedValue = joystickInput.magnitude;
             animator.SetFloat("Speed", speedValue);
-            Debug.Log("Speed Animator Value: " + speedValue); // Quita esto si no lo necesitas
         }
     }
+
     private void OnEnable()
     {
         if (joystick != null)

@@ -9,16 +9,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.66402
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.022
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.34753
+      value: 0.34757
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
       propertyPath: m_Name
       value: Pokeball
@@ -66,6 +82,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1559262748186514728}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3045195632823050274}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6921494739230400416}
   m_SourcePrefab: {fileID: 100100000, guid: c43251502e509924b8aee0fa8bc51910, type: 3}
 --- !u!1 &5273527283753898408 stripped
 GameObject:
@@ -98,7 +120,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &1559262748186514728
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -120,3 +142,27 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.040000003
   m_Center: {x: -0.0000000037252903, y: 0.040000003, z: 0.00004249811}
+--- !u!114 &3045195632823050274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5273527283753898408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7e3400855d1ef40a18ed267640e67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+--- !u!114 &6921494739230400416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5273527283753898408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3cde6639631a34f9960e105efad715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleDebug
