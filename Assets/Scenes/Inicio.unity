@@ -147,7 +147,7 @@ RectTransform:
   m_GameObject: {fileID: 60923919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 460589204}
@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1100, y: -500}
+  m_AnchoredPosition: {x: 273.46, y: -132.98291}
   m_SizeDelta: {x: 550, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60923921
@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 60923922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540544832}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: IrAEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ImageRouter
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &60923922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,14 +279,14 @@ RectTransform:
   m_GameObject: {fileID: 61477443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477501087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: -130}
+  m_AnchoredPosition: {x: 99.441, y: -41.000004}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &61477445
@@ -952,14 +964,14 @@ RectTransform:
   m_GameObject: {fileID: 703480669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477501087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1118, y: -130}
+  m_AnchoredPosition: {x: -277.94, y: -41}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &703480671
@@ -1028,7 +1040,7 @@ RectTransform:
   m_GameObject: {fileID: 714795883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 733146742}
@@ -1036,7 +1048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1100, y: -500}
+  m_AnchoredPosition: {x: -273.46, y: -132.98291}
   m_SizeDelta: {x: 550, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &714795885
@@ -1161,7 +1173,7 @@ RectTransform:
   m_GameObject: {fileID: 724078723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1826038726}
@@ -1169,7 +1181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -500}
+  m_AnchoredPosition: {x: -99.44095, y: -132.98286}
   m_SizeDelta: {x: 550, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724078725
@@ -1215,7 +1227,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 724078726}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540544832}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: IrAEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CambioModelos
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &724078726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,14 +1442,14 @@ RectTransform:
   m_GameObject: {fileID: 788054399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477501087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1079, y: -130}
+  m_AnchoredPosition: {x: 268.24, y: -41.000004}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788054401
@@ -1563,7 +1587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1645,7 +1669,7 @@ RectTransform:
   m_GameObject: {fileID: 1459209876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 384090389}
@@ -1653,7 +1677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: -500}
+  m_AnchoredPosition: {x: 99.44095, y: -132.98286}
   m_SizeDelta: {x: 550, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1459209878
@@ -1699,7 +1723,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1459209879}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540544832}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: IrAEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GroundPlane
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1459209879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1902,14 +1938,14 @@ RectTransform:
   m_GameObject: {fileID: 1518252347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477501087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -130}
+  m_AnchoredPosition: {x: -99.441, y: -41.000004}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1518252349
@@ -1977,14 +2013,14 @@ RectTransform:
   m_GameObject: {fileID: 1714578372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2486, y: 0.2486, z: 0.2486}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477501087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 574}
+  m_AnchoredPosition: {x: 0, y: 134.0141}
   m_SizeDelta: {x: 2000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714578374
