@@ -4,8 +4,8 @@ public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject obstaclePrefab;
     public Transform spawnArea;
-    public float spawnHeight = 3f;
-    public float spawnRate = 2f;
+    public float spawnHeight = 3f; // Altura a la que se generarán los obstáculos
+    public float spawnRate = 1.5f; // Tiempo entre cada generación de obstáculos
 
     private float timer;
 
