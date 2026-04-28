@@ -22,15 +22,23 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        Vector3 areaSize = spawnArea.localScale;
+        Collider areaCollider = spawnArea.GetComponent<Collider>();
+        Bounds bounds = areaCollider.bounds;
 
-        float randomX = Random.Range(-areaSize.x / 2, areaSize.x / 2);
-        float randomZ = Random.Range(-areaSize.z / 2, areaSize.z / 2);
+        float randomX = Random.Range(bounds.min.x, bounds.max.x);
+        float randomZ = Random.Range(bounds.min.z, bounds.max.z);
 
-        Vector3 spawnPosition =
-            spawnArea.position +
-            new Vector3(randomX, spawnHeight, randomZ);
+        Vector3 spawnPosition = new Vector3(
+            randomX,
+            bounds.max.y + spawnHeight,
+            randomZ
+        );
 
-        Instantiate(obstaclePrefab, spawnPosition, Quaternion.identity);
+        Instantiate(
+            obstaclePrefab,
+            spawnPosition,
+            Quaternion.identity,
+            spawnArea
+        );
     }
 }
